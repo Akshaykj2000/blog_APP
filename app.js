@@ -14,6 +14,6 @@ mongoose.connect("mongodb+srv://akshaykj:akshaykj@cluster0.3vob5wn.mongodb.net/b
 
 app.use("/blog",blogRouter)
 
-app.listen("3000",()=>{
+app.listen("3001",()=>{
     console.log("Server running........")
 })
