@@ -15,7 +15,7 @@ router.get("/viewall", async (req, res) => {
     .populate("userId","NAME AGE MOBILE ADDRESS PINCODE -_id")
     .exec()
     res.json(result)
-    
+
 })
 
 
