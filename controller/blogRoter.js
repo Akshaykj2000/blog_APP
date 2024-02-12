@@ -56,7 +56,10 @@ router.post("/signin",async(req,res)=>{
 })
 
 
-
+router.get("/view",async (req,res)=>{
+    let result= await signUpModels.find()
+    res.json(result)
+})
 
 module.exports =router
 
