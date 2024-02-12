@@ -52,13 +52,14 @@ router.post("/signin",async(req,res)=>{
     if(!match){
         return res.json({status:"Invalid Password"})
     }
-    res.json({status : "Signed IN "})
+    res.json({status : "Signed IN ","userdata":data})
 })
 
 
 router.get("/view",async (req,res)=>{
     let result= await signUpModels.find()
     res.json(result)
+
 })
 
 module.exports =router
